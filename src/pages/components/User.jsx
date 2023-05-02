@@ -8,7 +8,6 @@ export default function User() {
 const [email, setEmail] = useState('');
 const [username, setUsername] = useState('');
 const [password, setPassword] = useState('');
-const [users,setUsers]=useState([]);
 
 {/* To post a user to backend */}
 const handleClick=(e)=>{
@@ -25,19 +24,6 @@ const handleClick=(e)=>{
   })
 }
 
-{/* To get all Users in a list from backend*/}
-  useEffect (()=>{
-    fetch("http://localhost:8080/user/getAll")
-    .then(res=>res.json())
-    .then((result)=>{
-      setUsers(result);
-    })
-    .catch((error) =>{
-      console.log(error);
-    });
-  },[]);
-
-
   return (
       <Container>
         <h1>Create new User</h1>
@@ -49,18 +35,6 @@ const handleClick=(e)=>{
      
       <Button variant="contained" color='secondary' onClick={handleClick}>Create User</Button>
       </form>
-      </Paper>
-
-      <h1>Check out all created users</h1>
-      <Paper elevation={3}>
-
-        {users.map(user=>(
-          <Paper elevation={6} key={user.id}>
-            Id:{user.id}
-            Email:{user.email}
-            Username: {user.username}
-            </Paper>
-        ))}
       </Paper>
       </Container>
   );

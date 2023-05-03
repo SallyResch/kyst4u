@@ -9,7 +9,6 @@ import MenuIcon from '@mui/icons-material/Menu';
 import styles from './Navbar.module.scss'
 
 
-
 export default function Navbar() {
   return (
     <div>

@@ -9,6 +9,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import styles from './Navbar.module.scss'
 
 
+
 export default function Navbar() {
   return (
     <div>
@@ -25,7 +26,7 @@ export default function Navbar() {
                 <MenuIcon />
               </IconButton>
               <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-                Welcome to K.Y.S.T
+              K.Y.S.T
               </Typography>
               <Button color="inherit">Login</Button>
             </Toolbar>

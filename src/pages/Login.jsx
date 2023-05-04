@@ -4,7 +4,7 @@ import { Button,Paper } from '@mui/material';
 
 
 
-export default function Login() {
+export default function login() {
   return (
     <div>
       <Container>

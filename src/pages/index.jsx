@@ -29,7 +29,7 @@ export default function Home() {
         </div>
 
         <div className={styles.grid}>
-        <Link href="/start">Go to startpage</Link>
+        <Link href="/signUpPage">Go to startpage</Link>
         </div>
       </main>
     </>

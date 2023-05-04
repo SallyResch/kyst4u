@@ -19,10 +19,13 @@ const handleClick=(e)=>{
     headers:{"Content-Type":"application/json"},
     body: JSON.stringify(user)
   })
-  .then(()=> {
+    .then(()=> {
     console.log("New User Created");
-  })
-}
+    })
+      .catch((error) => {
+      console.error("Error creating new user:", error);
+      });
+}     
 
   return (
       <Container>

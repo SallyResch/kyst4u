@@ -24,7 +24,7 @@ export default function Home() {
         </div>
 
         <div className={styles.center}>
-        <h1>KYST</h1>
+        <h1>K.Y.S.T</h1>
         <p>KEEP YOUR SHIT TOGETHER</p>
         </div>
 

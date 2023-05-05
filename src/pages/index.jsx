@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
-import styles from 'sr/styles/Home.module.css'
+import styles from 'sr/styles/Home.module.scss'
 import Link from 'next/link'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -19,7 +19,7 @@ export default function Home() {
         <div className={styles.description}>
 
           <div>
-
+          <Link href="/signUpPage">Sign Up</Link>
           </div>
         </div>
 
@@ -29,7 +29,6 @@ export default function Home() {
         </div>
 
         <div className={styles.grid}>
-        <Link href="/signUpPage">Go to startpage</Link>
         </div>
       </main>
     </>

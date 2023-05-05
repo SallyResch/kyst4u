@@ -1,8 +1,8 @@
-import User from "./components/User.jsx";
+import SignUp from "./components/SignUp/SignUp.jsx";
 
 
 export default function signUpPage() {
   return (
-    <div><User/></div>
+    <div><SignUp/></div>
   )
 }

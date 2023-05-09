@@ -26,6 +26,7 @@ const handleClick = (e) => {
   })
     .then(() => {
       console.log('New User Created');
+      window.history.pushState(null, null, "/loginPage"); // Navigate to login page
     })
     .catch((error) => {
       console.error('Error creating new user:', error);

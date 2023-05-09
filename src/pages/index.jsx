@@ -20,7 +20,7 @@ export default function Home() {
         </div>
 
         <div className={styles.center}>
-        <Image src={KystLogo}></Image>
+        <Image src={KystLogo}alt='KYSTLOGO' className={styles.kystlogo}></Image>
         </div>
 
         <div className={styles.grid}>

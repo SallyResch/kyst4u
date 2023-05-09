@@ -1,4 +1,4 @@
-import SignUp from "./components/SignUp/SignUp.jsx";
+import SignUp from "./components/Signup/SignUp.jsx";
 
 
 export default function signUpPage() {

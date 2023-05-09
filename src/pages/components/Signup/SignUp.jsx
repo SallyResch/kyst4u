@@ -42,7 +42,7 @@ const handleClick = (e) => {
       <TextField id="outlined-basic" label="firstname" variant="outlined" value={firstname} onChange={(e)=>setFirstname(e.target.value)}/>
       <TextField id="outlined-basic" label="lastname" variant="outlined" value={lastname} onChange={(e)=>setLastname(e.target.value)}/>
       <TextField id="outlined-basic" label="email" variant="outlined" value={email} onChange={(e)=>setEmail(e.target.value)}/>
-      <TextField id="outlined-basic" label="password" variant="outlined" value={password} onChange={(e)=>setPassword(e.target.value)}/>
+      <TextField id="outlined-basic" label="password" variant="outlined" type="password" value={password} onChange={(e)=>setPassword(e.target.value)}/>
      
       <Button variant="contained" color='secondary' onClick={handleClick}>Create User</Button>
       </form>

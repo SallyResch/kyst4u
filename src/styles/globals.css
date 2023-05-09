@@ -12,9 +12,6 @@ body {
   overflow-x: hidden;
 }
 
-body {
-  background-color: $kystDarkGreen;
-}
 
 a {
   color: inherit;

@@ -8,7 +8,7 @@ export default function Admin() {
 
 {/* To get all Users in a list from backend*/}
 useEffect (()=>{
-  fetch("http://localhost:8080/user/getAll")
+  fetch("http://localhost:8080/api/v1/demo-controller/getAll")
   .then(res=>res.json())
   .then((result)=>{
     setUsers(result);

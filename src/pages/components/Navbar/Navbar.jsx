@@ -24,10 +24,11 @@ export default function Navbar() {
               >
                 <MenuIcon />
               </IconButton>
-              <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-              K.Y.S.T
+              <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}> <Button color="inherit" href="/"> K.Y.S.T</Button>
+             
               </Typography>
-              <Button color="inherit" href="/login">Login</Button>
+              <Button color="inherit" href="/signUpPage">Sign up</Button>
+              <Button color="inherit" href="/loginPage">Login</Button>
             </Toolbar>
           </AppBar>
         </Box>

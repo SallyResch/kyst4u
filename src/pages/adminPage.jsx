@@ -1,4 +1,4 @@
-import Admin from "./components/Admin.jsx";
+import Admin from "./components/OldFiles/Admin.jsx";
 
 export default function adminPage() {
   return (

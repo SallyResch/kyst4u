@@ -1,4 +1,4 @@
-.signupContainer{
+.loginContainer{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -11,7 +11,11 @@
 }
 
 .paper{
-  max-width: 320px;
-  padding: 0.3em;
-  margin:1em;
+  padding:0.4em;
+  margin: 1em;
+}
+
+.inputfield{
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
 }

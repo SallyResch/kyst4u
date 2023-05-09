@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import TextField from '@mui/material/TextField';
 import Container from '@mui/material/Container';
 import { Button, Paper } from '@mui/material';
+import styles from "./Login.module.scss";
 
 export default function Login() {
   const [email, setEmail] = useState('');
@@ -28,11 +29,12 @@ export default function Login() {
 
   return (
     <div>
-      <Container>
+      <Container className={styles.loginContainer}>
         <h1>Login</h1>
-        <Paper>
-          <form>
+        <Paper className={styles.paper}>
+          <form className={styles.form}>
             <TextField
+            
               id="outlined-basic"
               label="email"
               variant="outlined"
@@ -40,6 +42,7 @@ export default function Login() {
               onChange={(e) => setEmail(e.target.value)}
             />
             <TextField
+            className={styles.inputfield}
               id="outlined-basic"
               label="password"
               variant="outlined"
@@ -47,7 +50,7 @@ export default function Login() {
               value={password}
               onChange={(e) => setPassword(e.target.value)}
             />
-            <Button variant="contained" color="secondary" onClick={handleLogin}>
+            <Button variant="contained" color="success" onClick={handleLogin}>
               Login
             </Button>
           </form>

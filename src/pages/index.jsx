@@ -2,8 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from 'sr/styles/Home.module.scss'
-import Link from 'next/link'
-
+import KystLogo from "../../public/images/kyst-logo.png"
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
@@ -18,14 +17,10 @@ export default function Home() {
       <main className={`${styles.main} ${inter.className}`}>
         <div className={styles.description}>
 
-          <div>
-          <Link href="/signUpPage">Sign Up</Link>
-          </div>
         </div>
 
         <div className={styles.center}>
-        <h1>K.Y.S.T</h1>
-        <p>KEEP YOUR SHIT TOGETHER</p>
+        <Image src={KystLogo}alt='KYSTLOGO' className={styles.kystlogo}></Image>
         </div>
 
         <div className={styles.grid}>

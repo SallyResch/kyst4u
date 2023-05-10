@@ -13,7 +13,7 @@ export default function userPage() {
   return (
     <div>
       <h1>UserPage</h1>
-      <Button onClick={handleLogout}>Logout</Button>
+     {/*<Button onClick={handleLogout}>Logout</Button>*/} 
     </div>
   )
 }

@@ -1,4 +1,3 @@
-import { Button } from '@mui/material';
 import { useRouter } from "next/router";
 
 export default function userPage() {

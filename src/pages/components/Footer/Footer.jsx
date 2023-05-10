@@ -3,7 +3,7 @@ import styles from "./Footer.module.scss";
 export default function Footer() {
   return (
     <div className={styles.footerContainer}>
-        <p>Footer</p>
+        <h2>K . Y . S . T </h2>
     </div>
   )
 }

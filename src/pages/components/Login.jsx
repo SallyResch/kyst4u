@@ -3,10 +3,12 @@ import TextField from '@mui/material/TextField';
 import Container from '@mui/material/Container';
 import { Button, Paper } from '@mui/material';
 import styles from "./Login.module.scss";
+import { useRouter } from "next/router";
 
 export default function Login() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const redirect = useRouter();
 
   const handleLogin = async (e) => {
     e.preventDefault();
@@ -21,7 +23,7 @@ export default function Login() {
       // store the token in local storage or a cookie
       localStorage.setItem('token', data.token);
       // redirect the user to the dashboard or home page
-      window.location.href = "/userPage";
+      redirect.push ("/userPage");
     } catch (error) {
       console.error("Error logging in:", error);
     }

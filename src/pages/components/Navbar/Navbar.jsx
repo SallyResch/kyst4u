@@ -44,7 +44,12 @@ export default function Navbar() {
                 K.Y.S.T
               </Button>
             </Typography>
-            <Button color="inherit" href="/signUpPage">Sign up</Button>
+            {isLoggedIn ? null:(
+              <Button color="inherit" href="/signUpPage">
+              Sign up
+              </Button>
+            )
+            }
             {isLoggedIn ? (
               <Button color="inherit" onClick={handleLogout}>
                 Logout

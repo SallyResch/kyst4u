@@ -9,8 +9,8 @@ export default function Login() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const redirect = useRouter();
-  const [isLoggedIn, setIsLoggedIn] = useState;
-  
+  const [isLoggedIn, setIsLoggedIn] = useState('');
+
   const handleLogin = async (e) => {
     e.preventDefault();
     const user = { email, password };

@@ -22,7 +22,7 @@ export default function Navbar() {
                 aria-label="menu"
                 sx={{ mr: 2 }}
               >
-                <MenuIcon />
+              <MenuIcon />
               </IconButton>
               <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}> <Button color="inherit" href="/"> K.Y.S.T</Button>
              

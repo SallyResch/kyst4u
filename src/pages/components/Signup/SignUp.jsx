@@ -3,6 +3,7 @@ import TextField from '@mui/material/TextField';
 import Container from '@mui/material/Container';
 import { Button,Paper } from '@mui/material';
 import styles from "./SignUp.module.scss";
+
 export default function SignUp() {
 
 const [firstname, setFirstname] = useState('');
@@ -26,7 +27,11 @@ const handleClick = (e) => {
   })
     .then(() => {
       console.log('New User Created');
-      window.history.pushState(null, null, "/loginPage"); // Navigate to login page
+      localStorage.setItem('token');
+      window.onbeforeunload = function() {
+        localStorage.removeItem('token');
+      };
+      //window.history.pushState(null, null, "/loginPage"); // Navigate to login page
     })
     .catch((error) => {
       console.error('Error creating new user:', error);

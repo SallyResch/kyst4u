@@ -1,5 +1,5 @@
 export default function logoutPage() {
   return (
-    <div>logoutPage</div>
+    <div><h1>You are logged out, see you soon</h1></div>
   )
 }

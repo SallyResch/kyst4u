@@ -9,7 +9,8 @@ export default function Login() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const redirect = useRouter();
-
+  const [isLoggedIn, setIsLoggedIn] = useState;
+  
   const handleLogin = async (e) => {
     e.preventDefault();
     const user = { email, password };
@@ -24,6 +25,8 @@ export default function Login() {
       localStorage.setItem('token', data.token);
       // redirect the user to the dashboard or home page
       redirect.push ("/userPage");
+      isLoggedIn(true);
+      setIsLoggedIn(true);
     } catch (error) {
       console.error("Error logging in:", error);
     }

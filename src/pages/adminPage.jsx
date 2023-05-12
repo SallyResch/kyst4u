@@ -1,7 +1,7 @@
-import Admin from "./components/OldFiles/Admin.jsx";
+import CheckUsers from "./components/AllUser/CheckUsers.jsx";
 
 export default function adminPage() {
   return (
-    <div><Admin/></div>
+    <div><CheckUsers/></div>
   )
 }

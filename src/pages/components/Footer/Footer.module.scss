@@ -1,6 +1,15 @@
 @import '/colors.scss';
 
 .footerContainer{
-  height:50px;
-  background-color: $kystDarkgreen;
+  height:70px;
+  background-color: green;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+.bodytext{
+  padding-left:10px ;
+}
+.header {
+  padding-right: 10px;
 }

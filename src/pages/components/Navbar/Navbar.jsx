@@ -27,9 +27,9 @@ export default function Navbar() {
 
   return (
     <div>
-      <Box sx={{ flexGrow: 1 }} className={styles.navbarBox}>
-        <AppBar position="static">
-          <Toolbar>
+      <Box sx={{ flexGrow: 1 }} >
+        <AppBar position="static" className={styles.navbarBox}>
+          <Toolbar >
             <IconButton
               size="large"
               edge="start"

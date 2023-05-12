@@ -1,5 +1,4 @@
 import React, {useEffect, useState} from 'react';
-
 import Container from '@mui/material/Container';
 import { Paper } from '@mui/material';
 
@@ -8,7 +7,7 @@ export default function CheckUsers() {
 
 {/* To get all Users in a list from backend*/}
 useEffect (()=>{
-  fetch("http://localhost:8080/user/getAll")
+  fetch("http://localhost:8080/api/v1/auth/getUsersCredentials")
   .then(res=>res.json())
   .then((result)=>{
     setUsers(result);
@@ -24,10 +23,10 @@ useEffect (()=>{
 
         {users.map(user=>(
           <Paper elevation={6} key={user.id}>
-            Id:{user.id}
-            Email:{user.email}
-            Username: {user.username}
-            </Paper>
+            <p>Email:{user.email}</p> 
+            <p>Firstname: {user.firstname}</p> 
+            <p>Lastname: {user.lastname}</p> 
+          </Paper>
         ))}
       </Paper>
     </Container>

@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from 'sr/styles/Home.module.scss'
-import KystLogo from "../../public/images/kyst-logo.png"
+import KystLogo from "../../public/images/kystLogo.png"
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {

@@ -3,6 +3,7 @@ import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from 'sr/styles/Home.module.scss'
 import KystLogo from "../../public/images/kystLogo.png"
+import Link from 'next/link'
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
@@ -21,9 +22,19 @@ export default function Home() {
 
         <div className={styles.center}>
         <Image src={KystLogo}alt='KYSTLOGO' className={styles.kystlogo}></Image>
+
+        
         </div>
 
         <div className={styles.grid}>
+        <Link 
+          href="mailto:sallyresch27@gmail.com"
+          // såhär anropar man flera klasser
+          //className={`${styles.body2} ${styles.footerMail}`}
+          className={styles.footerMail}
+        >
+          Contact us
+        </Link>
         </div>
       </main>
     </>

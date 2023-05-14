@@ -17,10 +17,13 @@ export default function Login() {
     try {
       const response = await fetch("http://localhost:8080/api/v1/auth/authenticate", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: { 
+        "Content-Type": "application/json",
+       },
         body: JSON.stringify(user),
       });
       const data = await response.json();
+      console.log(user);
       // store the token in local storage or a cookie
       localStorage.setItem('token', data.token);
       // redirect the user to the dashboard or home page
@@ -41,7 +44,6 @@ export default function Login() {
         <Paper className={styles.paper}>
           <form className={styles.form}>
             <TextField
-            
               id="outlined-basic"
               label="email"
               variant="outlined"

@@ -27,6 +27,7 @@ useEffect (()=>{
             <p>Email:{user.email}</p> 
             <p>Firstname: {user.firstname}</p> 
             <p>Lastname: {user.lastname}</p> 
+            <p>Role: {user.role}</p> 
           </Paper>
         ))}
       </Paper>

@@ -6,6 +6,7 @@
   padding: 6rem;
   min-height: 100vh;
   background-color: #2b4d29;
+  
 }
 
 .description {
@@ -108,6 +109,13 @@
 
 .logo {
   position: relative;
+}
+.footerMail {
+  display: block;
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: black;
+  text-decoration: none;
 }
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {

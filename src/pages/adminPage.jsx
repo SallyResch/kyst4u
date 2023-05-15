@@ -1,7 +1,35 @@
-import CheckUsers from "./components/AllUser/CheckUsers.jsx";
+import React, {useEffect, useState} from 'react';
+import Container from '@mui/material/Container';
+import { Paper } from '@mui/material';
 
 export default function adminPage() {
-  return (
-    <div><CheckUsers/></div>
+  const[users,setUsers]= useState([]);
+
+  {/* To get all Users in a list from backend*/}
+  useEffect (()=>{
+    fetch("http://localhost:8080/api/v1/auth/getUsersCredentials")
+    .then(res=>res.json())
+    .then((result)=>{
+      setUsers(result);
+    })
+    .catch((error) =>{
+      console.log(error);
+    });
+  },[]);
+      return (
+        <Container>
+        <h1>Check out all created users</h1>
+          <Paper elevation={3}>
+    
+            {users.map(user=>(
+              <Paper elevation={6} key={user.id} >
+                <p>Email:{user.email}</p> 
+                <p>Firstname: {user.firstname}</p> 
+                <p>Lastname: {user.lastname}</p> 
+                <p>Role: {user.role}</p> 
+              </Paper>
+            ))}
+          </Paper>
+        </Container>
   )
 }

@@ -21,7 +21,7 @@ export default function Home() {
         </div>
 
         <div className={styles.center}>
-        <Image src={KystLogo}alt='KYSTLOGO' className={styles.kystlogo}></Image>
+        <Image src={KystLogo}alt='KYSTLOGO' className={styles.kystlogo}/>
 
         
         </div>
@@ -29,8 +29,6 @@ export default function Home() {
         <div className={styles.grid}>
         <Link 
           href="mailto:sallyresch27@gmail.com"
-          // såhär anropar man flera klasser
-          //className={`${styles.body2} ${styles.footerMail}`}
           className={styles.footerMail}
         >
           Contact us

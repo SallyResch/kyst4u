@@ -1,5 +1,5 @@
 import { useRouter } from "next/router";
-import { Button } from "@mui/material";
+import { Button, Paper } from "@mui/material";
 import styles from "../styles/Home.module.scss"
 import { useState, useEffect } from 'react';
 
@@ -88,11 +88,12 @@ export default function userPage() {
     <div>
       <main className={styles.main}>
       <h1>{user.firstname}'s Profile Page</h1>
-      <form action="">
+      <Paper elevation={6} key={user.id}>
       <p key={user.id}>Email: {user.email}</p>
       <p key={user.id}>Firstname: {user.firstname}</p>
       <p key={user.id}>Lastname: {user.lastname}</p>
-      </form>
+      <p key={user.id}>Role: {user.role}</p>
+      </Paper>
       <Button onClick={handleLogout}>Logout</Button>
       <Button onClick={handleUpdateUser}>Update User</Button>
       <Button onClick={handleDeleteUser}>Delete User</Button>

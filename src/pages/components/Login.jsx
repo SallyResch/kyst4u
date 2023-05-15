@@ -44,20 +44,20 @@ export default function Login() {
         <Paper className={styles.paper}>
           <form className={styles.form}>
             <TextField
-              id="outlined-basic"
               label="email"
               variant="outlined"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
+              autoComplete="email"
             />
             <TextField
             className={styles.inputfield}
-              id="outlined-basic"
               label="password"
               variant="outlined"
               type="password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
+              autoComplete="current-password"
             />
             <Button variant="contained" color="success" onClick={handleLogin}>
               Login
